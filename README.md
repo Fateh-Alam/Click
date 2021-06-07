@@ -3,6 +3,10 @@
 Click is a library of amazing button styles for SwiftUI.
 
 
+## Purpose
+
+The goal of this repository is to allow Swift Developers to create rich UI with even more ease. Because we provide amazing Button Styles, and more
+
 ## INSTALLATION
 
 ### Swift Package Manager
