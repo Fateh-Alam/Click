@@ -8,12 +8,16 @@ public struct BlueButtonStyle: ButtonStyle{
     
     public init(){}
     
+    public var cornerRadius: CGFloat = 16
+    public var color: Color = Color.blue
+    public var textColor: Color = Color.white
+    
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.title)
-            .foregroundColor(Color.white)
+            .foregroundColor(textColor)
             .padding()
-            .background(Color.blue)
-            .cornerRadius(15)
+            .background(color)
+            .cornerRadius(cornerRadius)
     }
 }
