@@ -44,6 +44,7 @@ public struct CustomButtonStyle: ButtonStyle{
             .padding()
             .background(self.isNeumorphic ? color : Color.clear)
             .cornerRadius(cornerRadius)
+            .padding(5)
             .background(
                 self.isNeumorphic ?
                     ZStack {
