@@ -10,10 +10,10 @@ public struct BlueButtonStyle: ButtonStyle{
     public var color: Color = Color.blue
     public var textColor: Color = Color.white
     
-    public init(cornerRadii: CGFloat, background: Color, foregroundColor: Color){
-        self.cornerRadius = cornerRadii
-        self.color = background
-        self.textColor = foregroundColor
+    public init(cornerRadii: CGFloat?, background: Color?, foregroundColor: Color?){
+        self.cornerRadius = cornerRadii ?? 16
+        self.color = background ?? Color.blue
+        self.textColor = foregroundColor ?? Color.white
     }
     
     public func makeBody(configuration: Configuration) -> some View {
@@ -29,11 +29,11 @@ public struct BlueButtonStyle: ButtonStyle{
 //@available(iOS 13.0, *)
 //@available(macOS 10.15, *)
 //public struct CustomBlueButtonStyle: ButtonStyle{
-//    
+//
 //    public var cornerRadius: CGFloat = 16
 //    public var color: Color = Color.blue
 //    public var textColor: Color = Color.white
-//    
+//
 //    public init(cornerRadii: CGFloat, background: Color, foregroundColor: Color){
 //        self.cornerRadius = cornerRadii
 //        self.color = background
